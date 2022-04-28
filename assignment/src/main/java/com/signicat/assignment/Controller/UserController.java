@@ -62,7 +62,7 @@ public class UserController {
 		} 
 		catch (BadCredentialsException e) {
 			logger.error("Invalid credentials");
-			throw new Exception("INVALID_CREDENTIALS", e);
+			throw new Exception("INVALID CREDENTIALS", e);
 		}
 		
 		UserDetails user= subjectService.loadUserByUsername(request.getUsername());
